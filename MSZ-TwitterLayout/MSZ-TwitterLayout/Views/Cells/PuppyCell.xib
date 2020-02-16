@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="WSG-Nu-s6v" userLabel="PuppyCell" customClass="PuppyCell" customModule="MSZFLowLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1397" height="892"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="1397" height="892"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H95-rJ-7mg">
+                        <rect key="frame" x="0.0" y="0.0" width="799" height="892"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="Wxf-0P-uQC">
+                                <rect key="frame" x="0.0" y="0.0" width="799" height="892"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wxf-0P-uQC" firstAttribute="top" secondItem="H95-rJ-7mg" secondAttribute="top" id="M0I-gi-llt"/>
+                            <constraint firstAttribute="bottom" secondItem="Wxf-0P-uQC" secondAttribute="bottom" id="cIa-dM-JTu"/>
+                            <constraint firstItem="Wxf-0P-uQC" firstAttribute="leading" secondItem="H95-rJ-7mg" secondAttribute="leading" id="hd3-eM-rBp"/>
+                            <constraint firstAttribute="trailing" secondItem="Wxf-0P-uQC" secondAttribute="trailing" id="vgl-ID-2RE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="H95-rJ-7mg" secondAttribute="bottom" id="NXm-iB-UUs"/>
+                <constraint firstItem="H95-rJ-7mg" firstAttribute="top" secondItem="WSG-Nu-s6v" secondAttribute="top" id="Ro2-PM-d5i"/>
+                <constraint firstItem="H95-rJ-7mg" firstAttribute="leading" secondItem="WSG-Nu-s6v" secondAttribute="leading" id="Ulx-pW-953"/>
+                <constraint firstAttribute="trailing" secondItem="H95-rJ-7mg" secondAttribute="trailing" id="p0P-ts-1HD"/>
+            </constraints>
+            <size key="customSize" width="1397" height="892"/>
+            <connections>
+                <outlet property="puppyImage" destination="Wxf-0P-uQC" id="7e3-Dt-p4A"/>
+            </connections>
+            <point key="canvasLocation" x="384.78260869565219" y="421.875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="11" width="746" height="798"/>
+    </resources>
+</document>

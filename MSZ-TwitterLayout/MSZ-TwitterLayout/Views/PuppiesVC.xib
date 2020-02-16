@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PuppiesVC" customModule="MSZFLowLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="puppiesCollectionView" destination="le8-F9-fzv" id="soZ-n3-Ddm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="le8-F9-fzv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.12549019610000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a6J-LJ-02y">
+                        <size key="itemSize" width="200" height="300"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" tag="22" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1111" translatesAutoresizingMaskIntoConstraints="NO" id="Mek-js-O8O">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-O6-Bk1">
+                    <rect key="frame" x="-2" y="812" width="418" height="31"/>
+                    <connections>
+                        <action selector="nextWithSlider:" destination="-1" eventType="valueChanged" id="dvP-0F-f2M"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="le8-F9-fzv" secondAttribute="trailing" id="1s9-5z-O6V"/>
+                <constraint firstItem="hLT-Ia-pn9" firstAttribute="trailing" secondItem="jdh-O6-Bk1" secondAttribute="trailing" id="BIT-CZ-Ijr"/>
+                <constraint firstItem="le8-F9-fzv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GFL-xy-W0Q"/>
+                <constraint firstItem="hLT-Ia-pn9" firstAttribute="bottom" secondItem="jdh-O6-Bk1" secondAttribute="bottom" constant="20" id="JYU-st-GPy"/>
+                <constraint firstAttribute="bottom" secondItem="Mek-js-O8O" secondAttribute="bottom" id="Vep-ts-TE2"/>
+                <constraint firstItem="le8-F9-fzv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vsm-7w-m7t"/>
+                <constraint firstItem="Mek-js-O8O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WN0-Np-8h1"/>
+                <constraint firstAttribute="trailing" secondItem="Mek-js-O8O" secondAttribute="trailing" id="d5J-iQ-IjU"/>
+                <constraint firstAttribute="bottom" secondItem="le8-F9-fzv" secondAttribute="bottom" id="gIM-e2-j79"/>
+                <constraint firstItem="Mek-js-O8O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ksu-ej-Y9k"/>
+                <constraint firstItem="jdh-O6-Bk1" firstAttribute="leading" secondItem="hLT-Ia-pn9" secondAttribute="leading" id="xCT-fb-nsR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="hLT-Ia-pn9"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1111" width="591" height="1280"/>
+    </resources>
+</document>
